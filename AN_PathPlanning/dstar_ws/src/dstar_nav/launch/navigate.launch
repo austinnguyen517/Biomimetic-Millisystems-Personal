@@ -1,0 +1,7 @@
+<launch>
+
+    <node pkg = "dstar_nav" type = "dStarLegROS.py" name = "navigator1" output = "screen"/>
+    <node pkg = "dstar_nav" type = "dStarLegROS2.py" name = "navigator2" output = "screen"/> 
+    <node pkg = "dstar_nav" type = "proxy.py" name = "proxy" output = "screen"/>
+
+</launch> 
