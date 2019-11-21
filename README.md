@@ -1,4 +1,4 @@
-# Biomimetic-Millisystems-Personal
+# Biomimetic-Millisystems
 Path planning, perception, and collaborative robot learning
 
 ## AN_PathPlanning
