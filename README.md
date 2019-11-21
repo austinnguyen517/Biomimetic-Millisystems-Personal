@@ -1,5 +1,8 @@
-# Biomimetic-Millisystems
-Path planning, perception, and collaborative robot learning
+# Biomimetic-Millisystems: Overview
+  - Perception using RGB values and greedy algorithms
+  - Path planning with revised DStar Lite algorithm for collaborative robot navigation
+  - ROS interface to design of ROS infrastructure to facilitate multirobot updates
+  - Probabilistic DStar with uncertainty minimization using Gaussian Processes, Shannon Entropy, and Expected Gain of Mutual Information
 
 ## AN_PathPlanning
 #### dStar_ws
