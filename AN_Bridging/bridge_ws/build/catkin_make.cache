@@ -1,0 +1,2 @@
+multi_bridge
+-DCATKIN_DEVEL_PREFIX=/home/austinnguyen517/Documents/Research/BML/MultiRobot/AN_Bridging/bridge_ws/devel -DCMAKE_INSTALL_PREFIX=/home/austinnguyen517/Documents/Research/BML/MultiRobot/AN_Bridging/bridge_ws/install -G Unix Makefiles

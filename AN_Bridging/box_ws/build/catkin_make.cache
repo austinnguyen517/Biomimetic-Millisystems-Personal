@@ -1,0 +1,2 @@
+multi_box
+-DCATKIN_DEVEL_PREFIX=/home/austinnguyen517/Documents/Research/BML/MultiRobot/AN_Bridging/box_ws/devel -DCMAKE_INSTALL_PREFIX=/home/austinnguyen517/Documents/Research/BML/MultiRobot/AN_Bridging/box_ws/install -G Unix Makefiles

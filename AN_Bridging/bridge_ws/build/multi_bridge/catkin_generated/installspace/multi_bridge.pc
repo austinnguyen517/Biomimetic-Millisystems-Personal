@@ -1,0 +1,8 @@
+prefix=/home/austinnguyen517/Documents/Research/BML/MultiRobot/AN_Bridging/bridge_ws/install
+
+Name: multi_bridge
+Description: Description of multi_bridge
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/austinnguyen517/Documents/Research/BML/MultiRobot/AN_Bridging/bridge_ws/install/lib 
+Requires: 

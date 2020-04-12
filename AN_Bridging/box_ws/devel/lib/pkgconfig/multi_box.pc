@@ -1,0 +1,8 @@
+prefix=/home/austinnguyen517/Documents/Research/BML/MultiRobot/AN_Bridging/box_ws/devel
+
+Name: multi_box
+Description: Description of multi_box
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

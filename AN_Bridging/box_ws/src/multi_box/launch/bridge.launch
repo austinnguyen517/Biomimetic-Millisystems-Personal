@@ -1,0 +1,7 @@
+<launch>
+
+    <!--node pkg = "multi_bridge" type = "bridgeAgent.py" name = "bridge_bot" output = "screen"/-->
+    <node pkg = "multi_bridge" type = "tankAgent.py" name = "tank_bot" output = "screen"/> 
+    <node pkg = "multi_bridge" type = "manager.py" name = "manager" output = "screen"/>
+
+</launch>
