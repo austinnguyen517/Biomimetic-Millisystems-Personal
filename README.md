@@ -20,8 +20,16 @@
   - MADDPG ~ coming soon
   - Hierarchical Feudal-Inspired Algorith ~ coming soon
 
+# AN_Info_Explore
+## Information-based exploration for 3D mapping
+  - Unfinished
+
 # AN_PathPlanning
 #### dStar_ws
   - Catkin workspace using ROS interface for collaborative robots
   - Uses multiple robots in V-Rep environment to navigate unpredicatable terrain using revised D-StarLite algorithm
   - Utilizes proxy ROS node to effectively communicate new obstacles between robots
+ 
+# AN_RGB_Perception
+#### Red light follower
+  - Naive, greedy implementation for robot following red light
