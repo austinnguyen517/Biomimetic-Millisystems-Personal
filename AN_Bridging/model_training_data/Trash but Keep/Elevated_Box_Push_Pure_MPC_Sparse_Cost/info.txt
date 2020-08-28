@@ -1,0 +1,21 @@
+Push in hole environment
+
+Pure MPC when training
+Same testing
+.5 explore
+.9996 explore decay
+
+Architecture
+10, 256, 256, 8
+
+Leaky relu
+
+mu 0
+std 1
+
+batch 256
+lr 2e-3
+buffer 2500
+gamma .99
+double true
+epiisodes 800 (400 train 400 test)

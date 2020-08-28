@@ -1,0 +1,36 @@
+combination environment
+
+Hybrid in train and test
+
+.7 explore
+.9996 explore decay
+
+Architecture
+10, 256, 256, 8
+
+Model:
+One hot. 18 256 256 256 9
+
+Train model every 100 episodes for 350 epochs
+
+Train: had chance of completely random action
+Test/Train:
+deterministic decisions. Probabilistic rollouts proppotional to Q (8 sequences length 5...one sequence for each action to start)
+Only looked at first Q value. Looked at cost over entire rollout. Entropy benchmark .99. 
+mpc weight .1. No tuning. Determinisitc choose best one first Q - min cost over rollout
+
+Rewards had penalty for invalid action -.5 and changeAction was enforced. capped rewards at -20. 
+Still yielded some "stuck" rollouts during testing -> low rewards. Inconsistent
+
+Leaky relu
+
+mu 0
+std 1
+
+batch 256
+lr 3e-4
+buffer 5000
+gamma .99
+double true
+episodes 1600 (800 train, 800 test)
+

@@ -1,0 +1,30 @@
+combination environment
+
+Hybrid in train and test
+
+.7 explore
+.9996 explore decay
+
+Architecture
+10, 256, 256, 8
+
+Model:
+One hot. 18 256 256 256 9
+
+Train model every 100 episodes for 200 -> 500 epochs increase every time cap at 500
+
+Train: had chance of completely random action
+Test/Train:
+
+Leaky relu
+
+mu 0
+std 1
+
+batch 256
+lr 3e-4
+buffer 5000
+gamma .95
+double true
+episodes 1200 (600 train, 600 test)
+

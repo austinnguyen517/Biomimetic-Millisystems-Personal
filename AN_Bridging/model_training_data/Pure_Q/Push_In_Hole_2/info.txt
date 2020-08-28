@@ -1,0 +1,21 @@
+Push in hole environment
+
+Stochastic Q when training with exploration
+Same when testing
+.5 explore
+.9996 explore decay
+
+Architecture
+10, 256, 256, 8
+
+Leaky relu
+
+mu 0
+std 1
+
+batch 256
+lr 3e-4
+buffer 2500
+gamma .99
+double true
+episodes 800 (400 train, 400 test)

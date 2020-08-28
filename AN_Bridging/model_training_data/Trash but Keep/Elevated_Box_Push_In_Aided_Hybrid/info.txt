@@ -1,0 +1,21 @@
+box push elevated
+
+hybrid
+
+num rollouts: 20
+length rollouts: 5
+
+training: probabilistic q with mpc on the q values and cost 
+cost was mixed, tuned weighted sum of orientation, box to bot, box to goal
+
+testing: probabailistic q with mpc on the q values and cost 
+
+architecture 
+10 256 256 8 
+
+noise on model: .02
+dropout: .1
+weight_decay: 0
+
+exploration: .9 decay down to .1 .9996
+epidoes 800 (400 train 400 test)

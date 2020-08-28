@@ -1,0 +1,73 @@
+   valPars = {
+                'in_n':         sum([agents[key]["n"] for key in agents.keys()]),
+                'out_n':        1, 
+                'hidden':       [256, 256, 256],
+                'act':          [nn.LeakyReLU(),nn.LeakyReLU(),nn.LeakyReLU()],
+                'preprocess':   True, 
+                'batch_norm':   True,
+                'prob':         False,
+                'trainMode':    True,
+                'load':         False,
+                'tau':          .005,
+                'loss_fnc':     "MSE",
+                'dropout':      [0, 0,0]
+                }        
+    valTrain = {
+                'batch':        128,
+                'lr':           1e-5,
+                'lr_decay':     (.5, 200),
+                'manual':       True,
+                'buffer':       3000,
+                'a':            1,
+                'explore':      False,
+                'mean':         torch.Tensor([0, 0]),
+                'variance':     torch.Tensor([1.5, 1.5]),
+                'l2':           .01,
+                'gamma':        GAMMA
+                }
+    qPars = {
+                'in_n':         sum([agents[key]["n"] + agents[key]["u"] for key in agents.keys()]),
+                'out_n':        1,
+                'hidden':       [256, 256,256],
+                'act':          [nn.LeakyReLU(), nn.LeakyReLU(), nn.LeakyReLU()],
+                'preprocess':   True,
+                'batch_norm':   True,
+                'prob':         False,
+                'trainMode':    True,
+                'load':         False,
+                'loss_fnc':     "MSE",
+                'dropout':      [0,0,0]
+    }
+    qTrain = {
+                'lr':           1e-5,
+                'lr_decay':     (.5, 200),
+                'manual':       True,
+                'mean':         torch.Tensor([0, 0, 0, 0]),
+                'variance':     torch.Tensor([1.5, 1.5, 3, 3]),
+                'l2':           .01,
+    }
+    actPars = {
+                'in_n':         sum([agents[key]["n"] for key in agents.keys()]),
+                'out_n':        sum([agents[key]["u"] for key in agents.keys()]), 
+                'hidden':       [256, 256], 
+                'mean_width':   256,
+                'std_width':    256,
+                'act':          [nn.LeakyReLU(), nn.LeakyReLU()],
+                'mean_range':   3,
+                'batch_norm':   False,
+                'logstd_range': math.log(2),
+                'preprocess':   True, 
+                'prob':         True,
+                'dropout':      [0, 0, 0], 
+                'loss_fnc':      "",
+            }
+    actTrain = { 
+                'lr':           1e-6,
+                'lr_decay':     (.5, 200),
+                'l2':           .02,
+                'manual':       True,
+                'clamp':        2,
+                'alpha':        .2,
+                'mean':         torch.Tensor([0, 0]),
+                'variance':     torch.Tensor([1.5, 1.5])
+                }

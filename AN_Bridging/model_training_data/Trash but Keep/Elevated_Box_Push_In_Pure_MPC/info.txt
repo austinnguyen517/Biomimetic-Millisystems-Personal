@@ -1,0 +1,18 @@
+box push elevated
+
+only mpc
+
+training: mpc on below cost. 50 rollouts length 10
+cost was mixed, tuned weighted sum of orientation, box to bot, box to goal
+
+testing: mpc same 
+
+architecture 
+10 256 256 9
+
+noise on model: .02
+dropout: .1
+weight_decay: 0
+
+exploration: .9 decay down to .1 .9996
+episodes 400 (200 train 200 test)
